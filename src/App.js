@@ -1,9 +1,10 @@
 import './sass/main.scss';
+import { Navbar } from './components/navigation/Navbar';
 
 function App() {
   return (
     <>
-      <h1>HELLO</h1>
+      <Navbar />
     </>
   );
 }
