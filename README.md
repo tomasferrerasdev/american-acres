@@ -11,7 +11,7 @@ American acres is a project with the aim of improving my skills in animation, la
 
 ## Tech Stack
 
-**Client:** React, SASS, Framer Motion, React reveal
+**Client:** React, SASS
 
 
 ## Run Locally
