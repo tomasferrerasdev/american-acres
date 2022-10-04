@@ -1,8 +1,8 @@
 
 # American acres 🌾
-
 American acres is a project with the aim of improving my skills in animation, layout creating and to develop my creativity when developing.
 
+![screen](https://user-images.githubusercontent.com/107090584/193905709-070a6f0e-8802-4259-996e-34c4a26225bf.png)
 
 ## Author
 
