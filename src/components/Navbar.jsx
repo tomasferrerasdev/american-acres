@@ -1,6 +1,17 @@
+import { motion } from 'framer-motion';
+
 export const Navbar = () => {
   return (
-    <div className="header__container">
+    <motion.div
+      className="header__container"
+      initial={{ opacity: 0, y: -180 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        ease: 'easeInOut',
+        duration: 1,
+        delay: 0.6,
+      }}
+    >
       <div className="header">
         <div className="header-inner">
           <div className="left">
@@ -38,6 +49,6 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
