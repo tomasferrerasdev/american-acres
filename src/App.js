@@ -1,10 +1,15 @@
 import './sass/main.scss';
-import { Navbar } from './components/navigation/Navbar';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Navbar } from './components/Navbar';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <AnimatePresence layoutId>
+        <Navbar />
+        <Banner />
+      </AnimatePresence>
     </>
   );
 }
