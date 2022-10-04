@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from './components/Navbar';
 import Banner from './components/Banner';
 import Loader from './components/Loader';
+import { People } from './components/People';
+import { News } from './components/News';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +35,8 @@ function App() {
                 />
               </div>
             )}
+            <People />
+            <News />
           </>
         )}
       </AnimatePresence>

@@ -122,3 +122,15 @@ button {
   font: inherit;
   background-color: transparent;
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 7rem 0;
+  @media (max-width: $layout-breakpoint-xsmall) {
+    padding: 3.5rem 0;
+  }
+}
