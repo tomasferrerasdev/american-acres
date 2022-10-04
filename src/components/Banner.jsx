@@ -8,7 +8,7 @@ const Banner = () => {
   }, []);
   return (
     <div className="banner">
-      <BannerRowTop title={'America'} />
+      <BannerRowTop title={'American'} />
       <BannerRowCenter title={'experienced'} playMarquee={playMarquee} />
       <BannerRowBottom title={'insurance'} />
     </div>
