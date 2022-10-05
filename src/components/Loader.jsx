@@ -62,7 +62,7 @@ const Loader = ({ setLoading }) => {
         <ImageBlock variants={item} id="image-1" />
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
-            src={process.env.PUBLIC_URL + `/images/image-2.jpg`}
+            src={process.env.PUBLIC_URL + `/images/image-2.webp`}
             alt="random alt"
             layoutId="main-image-1"
           />
@@ -78,11 +78,7 @@ const Loader = ({ setLoading }) => {
 export const ImageBlock = ({ id, variants }) => {
   return (
     <motion.div className={`image-block ${id}`} variants={variants}>
-      <img
-        src={process.env.PUBLIC_URL + `/images/${id}.webp`}
-        fallback={process.env.PUBLIC_URL + `/images/${id}.jpg`}
-        alt={id}
-      />
+      <img src={process.env.PUBLIC_URL + `/images/${id}.webp`} alt="" />
     </motion.div>
   );
 };

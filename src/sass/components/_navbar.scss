@@ -34,6 +34,14 @@
       gap: 2rem;
     }
 
+    .left {
+      img {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+      }
+    }
+
     .right {
       @media (max-width: $layout-breakpoint-small) {
         display: none;
