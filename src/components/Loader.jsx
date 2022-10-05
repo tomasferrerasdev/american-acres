@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from './Image';
 
 const container = {
   show: {
@@ -77,7 +78,7 @@ const Loader = ({ setLoading }) => {
 export const ImageBlock = ({ id, variants }) => {
   return (
     <motion.div className={`image-block ${id}`} variants={variants}>
-      <img
+      <Image
         src={process.env.PUBLIC_URL + `/images/${id}.webp`}
         alt="harvest and crops pic"
       />
