@@ -9,7 +9,11 @@ export const News = () => {
         </div>
         <div className="news-posts container">
           <div className="news-post">
-            <img src="/images/new-1.webp" alt="application illustration" />
+            <img
+              loading="lazy"
+              src="/images/new-1.webp"
+              alt="application illustration"
+            />
             <div className="data">
               <Fade delay={1}>
                 <h2>Order and pick up. Easy as that.</h2>
@@ -25,7 +29,7 @@ export const News = () => {
             </div>
           </div>
           <div className="news-post">
-            <img src="/images/new-2.webp" alt="jimador" />
+            <img loading="lazy" src="/images/new-2.webp" alt="jimador" />
             <Fade>
               <div className="data">
                 <h2>Hurricane Cleanup and Recovery.</h2>
