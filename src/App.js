@@ -31,7 +31,7 @@ function App() {
               <div className="transition-image final">
                 <motion.img
                   transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                  src={process.env.PUBLIC_URL + `/images/image-2.webp`}
+                  src={`https://ik.imagekit.io/txdk54zsu/image-2?ik-sdk-version=javascript-1.4.3&updatedAt=1664985678714`}
                   layoutId="main-image-1"
                   alt="harvester"
                 />

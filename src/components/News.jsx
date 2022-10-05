@@ -11,8 +11,8 @@ export const News = () => {
           <div className="news-post">
             <img
               loading="lazy"
-              src="/images/new-1.webp"
-              alt="application illustration"
+              src="https://ik.imagekit.io/txdk54zsu/new-1?ik-sdk-version=javascript-1.4.3&updatedAt=1664988087277"
+              alt="jimador"
             />
             <div className="data">
               <Fade delay={1}>
@@ -29,7 +29,11 @@ export const News = () => {
             </div>
           </div>
           <div className="news-post">
-            <img loading="lazy" src="/images/new-2.webp" alt="jimador" />
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/txdk54zsu/new-2?ik-sdk-version=javascript-1.4.3&updatedAt=1664988087277"
+              alt="jimador"
+            />
             <Fade>
               <div className="data">
                 <h2>Hurricane Cleanup and Recovery.</h2>

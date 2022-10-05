@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Image from './Image';
 
 const container = {
   show: {
@@ -62,7 +61,7 @@ const Loader = ({ setLoading }) => {
         <ImageBlock variants={item} id="image-1" />
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
-            src={process.env.PUBLIC_URL + `/images/image-2.webp`}
+            src={`https://ik.imagekit.io/txdk54zsu/image-2?ik-sdk-version=javascript-1.4.3&updatedAt=1664985678714`}
             alt="harvester image"
             layoutId="main-image-1"
           />
@@ -78,8 +77,8 @@ const Loader = ({ setLoading }) => {
 export const ImageBlock = ({ id, variants }) => {
   return (
     <motion.div className={`image-block ${id}`} variants={variants}>
-      <Image
-        src={process.env.PUBLIC_URL + `/images/${id}.webp`}
+      <img
+        src={`https://ik.imagekit.io/txdk54zsu/tr:w-600/${id}?ik-sdk-version=javascript-1.4.3&updatedAt=1664985711209`}
         alt="harvest and crops pic"
       />
     </motion.div>

@@ -17,13 +17,25 @@ export const People = () => {
       <Fade>
         <div className="home-screen__bottom">
           <div className="img">
-            <img loading="lazy" src="/images/people-1.webp" alt="farmer" />
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/txdk54zsu/people-1?ik-sdk-version=javascript-1.4.3&updatedAt=1664988081067"
+              alt="farmer"
+            />
           </div>
           <div className="img">
-            <img loading="lazy" src="/images/people-2.webp" alt="farmer" />
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/txdk54zsu/people-2?ik-sdk-version=javascript-1.4.3&updatedAt=1664988081067"
+              alt="farmer"
+            />
           </div>
           <div className="img">
-            <img loading="lazy" src="/images/people-3.webp" alt="cowboy" />
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/txdk54zsu/people-3?ik-sdk-version=javascript-1.4.3&updatedAt=1664988081067"
+              alt="farmer"
+            />
           </div>
         </div>
       </Fade>
