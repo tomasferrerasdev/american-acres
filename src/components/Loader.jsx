@@ -63,7 +63,7 @@ const Loader = ({ setLoading }) => {
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
             src={process.env.PUBLIC_URL + `/images/image-2.webp`}
-            alt="random alt"
+            alt="harvester image"
             layoutId="main-image-1"
           />
         </motion.div>
@@ -78,7 +78,10 @@ const Loader = ({ setLoading }) => {
 export const ImageBlock = ({ id, variants }) => {
   return (
     <motion.div className={`image-block ${id}`} variants={variants}>
-      <img src={process.env.PUBLIC_URL + `/images/${id}.webp`} alt="" />
+      <img
+        src={process.env.PUBLIC_URL + `/images/${id}.webp`}
+        alt="harvest and crops pic"
+      />
     </motion.div>
   );
 };

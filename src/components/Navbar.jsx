@@ -18,19 +18,19 @@ export const Navbar = () => {
             <div className="logo">
               <img
                 src={process.env.PUBLIC_URL + `/images/logo.svg`}
-                alt="algo"
+                alt="american acres logo"
               />
             </div>
 
             <nav className="nav">
               <li>
-                <a href="/cases">Cases</a>
+                <a href="/cases">CASES</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="/about">ABOUT</a>
               </li>
               <li>
-                <a href="/why">Why work with us?</a>
+                <a href="/why">WHY WORK WITH US?</a>
               </li>
             </nav>
           </div>
@@ -39,7 +39,7 @@ export const Navbar = () => {
             <div className="location">
               <img
                 src={process.env.PUBLIC_URL + `/images/location.svg`}
-                alt="algo"
+                alt="decorative svg"
               />
               <a href="/location">Find a location</a>
             </div>

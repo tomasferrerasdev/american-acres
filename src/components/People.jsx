@@ -17,13 +17,13 @@ export const People = () => {
       <Fade>
         <div className="home-screen__bottom">
           <div className="img">
-            <img src="/images/people-1.webp" alt="" />
+            <img src="/images/people-1.webp" alt="farmer" />
           </div>
           <div className="img">
-            <img src="/images/people-2.webp" alt="" />
+            <img src="/images/people-2.webp" alt="farmer" />
           </div>
           <div className="img">
-            <img src="/images/people-3.webp" alt="" />
+            <img src="/images/people-3.webp" alt="cowboy" />
           </div>
         </div>
       </Fade>

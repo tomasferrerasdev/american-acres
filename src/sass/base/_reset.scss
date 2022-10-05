@@ -124,7 +124,7 @@ button {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: $layout-breakpoint-medium;
   margin: 0 auto;
 }
 

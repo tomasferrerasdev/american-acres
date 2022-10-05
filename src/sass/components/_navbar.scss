@@ -5,9 +5,10 @@
 }
 
 .header {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 800;
   height: 120px;
-  max-width: 1400px;
+  max-width: $layout-breakpoint-medium;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -43,6 +44,12 @@
     }
 
     .right {
+      .location {
+        img {
+          height: 22px;
+          width: 15px;
+        }
+      }
       @media (max-width: $layout-breakpoint-small) {
         display: none;
       }
@@ -64,11 +71,11 @@
     .join {
       padding: 1rem 2rem;
       border-radius: 3rem;
-      font-weight: 600;
+      font-weight: 800;
     }
 
     .signIn {
-      border: 2px solid #465f57;
+      outline: 2px solid #465f57;
     }
 
     .join {
