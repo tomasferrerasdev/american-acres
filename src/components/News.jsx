@@ -1,4 +1,5 @@
 import { Fade } from 'react-awesome-reveal';
+
 export const News = () => {
   return (
     <div className="news-screen">

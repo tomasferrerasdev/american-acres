@@ -6,6 +6,7 @@ import Banner from './components/Banner';
 import Loader from './components/Loader';
 import { People } from './components/People';
 import { News } from './components/News';
+import { Faq } from './components/Faq';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
             )}
             <People />
             <News />
+            <Faq />
           </>
         )}
       </AnimatePresence>

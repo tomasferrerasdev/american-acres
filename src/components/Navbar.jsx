@@ -23,15 +23,17 @@ export const Navbar = () => {
             </div>
 
             <nav className="nav">
-              <li>
-                <a href="/cases">CASES</a>
-              </li>
-              <li>
-                <a href="/about">ABOUT</a>
-              </li>
-              <li>
-                <a href="/why">WHY WORK WITH US?</a>
-              </li>
+              <ul>
+                <li>
+                  <a href="/cases">CASES</a>
+                </li>
+                <li>
+                  <a href="/about">ABOUT</a>
+                </li>
+                <li>
+                  <a href="/why">WHY WORK WITH US?</a>
+                </li>
+              </ul>
             </nav>
           </div>
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Image = ({ src, fallback, type = 'image/webp', alt }) => {
   return (
     <picture>
