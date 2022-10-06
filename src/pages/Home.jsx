@@ -33,7 +33,17 @@ const Home = () => {
         ) : (
           <>
             <motion.div className="progress-bar" style={{ scaleX }} />
-            <Navbar />
+            <motion.div
+              initial={{ opacity: 0, y: -180 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                ease: 'easeInOut',
+                duration: 1,
+                delay: 0.6,
+              }}
+            >
+              <Navbar />
+            </motion.div>
             <Banner />
             {!loading && (
               <div className="transition-image final">

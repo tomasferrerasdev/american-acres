@@ -1,25 +1,16 @@
-import { motion } from 'framer-motion';
-
 export const Navbar = () => {
   return (
-    <motion.div
-      className="header__container"
-      initial={{ opacity: 0, y: -180 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        ease: 'easeInOut',
-        duration: 1,
-        delay: 0.6,
-      }}
-    >
+    <div className="header__container">
       <div className="header">
         <div className="header-inner">
           <div className="left">
             <div className="logo">
-              <img
-                src={process.env.PUBLIC_URL + `/images/logo.svg`}
-                alt="american acres logo"
-              />
+              <a href="/">
+                <img
+                  src={process.env.PUBLIC_URL + `/images/logo.svg`}
+                  alt="american acres logo"
+                />
+              </a>
             </div>
 
             <nav className="nav">
@@ -51,6 +42,6 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
