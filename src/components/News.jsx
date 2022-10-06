@@ -34,8 +34,8 @@ export const News = () => {
               src="https://ik.imagekit.io/txdk54zsu/new-2?ik-sdk-version=javascript-1.4.3&updatedAt=1664988087277"
               alt="jimador"
             />
-            <Fade>
-              <div className="data">
+            <div className="data">
+              <Fade delay={1}>
                 <h2>Hurricane Cleanup and Recovery.</h2>
                 <div>
                   <p>
@@ -45,8 +45,8 @@ export const News = () => {
                   </p>
                   <button className="signIn">Join to us</button>
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           </div>
         </div>
       </Fade>

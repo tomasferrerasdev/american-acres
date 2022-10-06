@@ -20,7 +20,7 @@
       text-align: center;
       font-size: 64px;
       font-weight: 800;
-      color: #465f57;
+      color: $green;
       @media (max-width: $layout-breakpoint-small) {
         font-size: 32px;
       }
@@ -72,9 +72,9 @@
           border-radius: 3rem;
           font-weight: 600;
           font-size: 2rem;
-          color: #465f57;
+          color: $green;
           width: fit-content;
-          border: 2px solid #465f57;
+          border: 2px solid $green;
         }
       }
     }

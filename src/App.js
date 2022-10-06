@@ -1,15 +1,21 @@
 import { useEffect, useState } from 'react';
 import './sass/main.scss';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from './components/Navbar';
 import Banner from './components/Banner';
 import Loader from './components/Loader';
 import { People } from './components/People';
 import { News } from './components/News';
-import { Faq } from './components/Faq';
+import { useScroll, useSpring, motion, AnimatePresence } from 'framer-motion';
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   useEffect(() => {
     loading
@@ -25,6 +31,7 @@ function App() {
           </motion.div>
         ) : (
           <>
+            <motion.div className="progress-bar" style={{ scaleX }} />
             <Navbar />
             <Banner />
             {!loading && (
@@ -39,7 +46,6 @@ function App() {
             )}
             <People />
             <News />
-            <Faq />
           </>
         )}
       </AnimatePresence>
