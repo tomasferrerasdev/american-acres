@@ -1,4 +1,6 @@
-import { AnimatedTextCharacter } from '../AnimatedTextCharacter';
+import { Fade } from 'react-awesome-reveal';
+import { Footer } from '../Footer';
+import { AboutList } from './AboutList';
 
 export const Heritage = () => {
   return (
@@ -10,9 +12,29 @@ export const Heritage = () => {
             alt="man pointing"
           />
         </div>
-        <div className="heritage-data">
-          <AnimatedTextCharacter text={'Hola heritage'} />
+        <div className="heritage-title section">
+          <div className="title-row">
+            <Fade direction="up" triggerOnce>
+              <div className="left">
+                <p>
+                  Our thoughts are with those affected. If you need assistance
+                  with a claim, please contact your agent or one of our claims
+                  professionals.
+                </p>
+                <h1>We care</h1>
+              </div>
+            </Fade>
+          </div>
+          <div className="title-row">
+            <Fade direction="up" triggerOnce>
+              <div>
+                <h1>About these</h1>
+              </div>
+            </Fade>
+          </div>
         </div>
+        <AboutList />
+        <Footer />
       </div>
     </>
   );

@@ -26,7 +26,7 @@ const letterAnimation = {
 const Banner = () => {
   return (
     <motion.div className="banner about-banner" variants={banner}>
-      <BannerRowTop title={'Lets get'} />
+      <BannerRowTop title={"Let's get"} />
       <BannerRowBottom title={'familiar'} />
     </motion.div>
   );
@@ -45,7 +45,7 @@ const AnimatedLetters = ({ title, disabled }) => (
         variants={letterAnimation}
         key={index}
       >
-        {letter}
+        {letter === ' ' ? '\u00a0\u00a0' : letter}
       </motion.span>
     ))}
   </motion.span>
@@ -54,7 +54,7 @@ const AnimatedLetters = ({ title, disabled }) => (
 const BannerRowTop = ({ title }) => {
   return (
     <div className={'banner-row max-width about-row'}>
-      <div className="row-col">
+      <div className="row-col about-col">
         <AnimatedLetters title={title} />
       </div>
       <motion.div

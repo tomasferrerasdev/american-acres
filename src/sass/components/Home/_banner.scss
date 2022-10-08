@@ -48,7 +48,7 @@
     .row-col {
       flex: 1;
       display: flex;
-      align-content: center;
+      align-content: flex-end;
       justify-content: center;
       @media (max-width: $layout-breakpoint-medium) {
         width: 70%;
