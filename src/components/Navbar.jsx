@@ -37,8 +37,9 @@ export const Navbar = () => {
               <a href="/location">Find a location</a>
             </div>
 
-            <button className="signIn">Sign In</button>
-            <button className="join">Join to us</button>
+            <a href="/" className="work">
+              Let’s work together
+            </a>
           </div>
         </div>
       </div>

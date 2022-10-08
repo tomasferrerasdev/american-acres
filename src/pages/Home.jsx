@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 
 import Loader from '../components/Loader';
-import Banner from '../components/Banner';
+import Banner from '../components/Home/Banner';
 import { Navbar } from '../components/Navbar';
-import { People } from '../components/People';
-import { News } from '../components/News';
+import { People } from '../components/Home/People';
+import { News } from '../components/Home/News';
+import { Form } from '../components/Home/Form';
 
 import { useScroll, useSpring, motion, AnimatePresence } from 'framer-motion';
 
@@ -57,6 +58,7 @@ const Home = () => {
             )}
             <People />
             <News />
+            <Form />
           </>
         )}
       </AnimatePresence>

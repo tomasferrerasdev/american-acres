@@ -22,7 +22,10 @@ const Location = () => {
           <p>Privacy Statement | Terms of Use</p>
         </div>
         <div className="location-img">
-          <img src="/images/map.png" alt="santa fe map" />
+          <img
+            src="https://ik.imagekit.io/txdk54zsu/about/map?ik-sdk-version=javascript-1.4.3&updatedAt=1665190904323"
+            alt="santa fe map"
+          />
         </div>
       </div>
     </>

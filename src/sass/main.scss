@@ -1,13 +1,19 @@
 @import 'abstracts/variables';
 
-@import 'components/navbar';
-@import 'components/banner';
-@import 'components/marquee';
 @import 'components/loader';
-@import 'components/people';
-@import 'components/news';
-@import 'components/404';
 @import 'components/location';
+@import 'components/404';
+@import 'components/navbar';
+
+@import 'components/Home/banner';
+@import 'components/Home/marquee';
+@import 'components/Home/form';
+@import 'components/Home/people';
+@import 'components/Home/news';
+
+@import 'components/About/about';
+@import 'components/About/aboutBanner';
+@import 'components/About/heritage';
 
 @import 'base/global';
 @import 'base/reset';

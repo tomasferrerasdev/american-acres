@@ -1,0 +1,16 @@
+.about-banner {
+  gap: 5rem;
+
+  .about-row {
+    overflow: visible;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .right-about {
+    gap: 6rem;
+    justify-content: center;
+    position: relative;
+  }
+}

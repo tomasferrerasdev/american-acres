@@ -50,8 +50,18 @@
           width: 15px;
         }
       }
+
       @media (max-width: $layout-breakpoint-small) {
         display: none;
+      }
+
+      a {
+        font-size: 1.7rem;
+        font-weight: 800;
+        &.work {
+          text-decoration: underline 2px $black;
+          text-underline-offset: 1rem;
+        }
       }
     }
 
@@ -66,22 +76,6 @@
 
     .nav > ul {
       list-style: none;
-    }
-
-    .signIn,
-    .join {
-      padding: 1rem 2rem;
-      border-radius: 3rem;
-      font-weight: 800;
-    }
-
-    .signIn {
-      outline: 2px solid #465f57;
-    }
-
-    .join {
-      background-color: #465f57;
-      color: $background;
     }
   }
 }
