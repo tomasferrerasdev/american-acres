@@ -6,6 +6,7 @@ import { Navbar } from '../components/Navbar';
 import { People } from '../components/Home/People';
 import { News } from '../components/Home/News';
 import { Form } from '../components/Home/Form';
+import { Footer } from '../components/Footer';
 
 import { useScroll, useSpring, motion, AnimatePresence } from 'framer-motion';
 
@@ -62,6 +63,7 @@ const Home = () => {
             <People />
             <News />
             <Form />
+            <Footer />
           </>
         )}
       </AnimatePresence>

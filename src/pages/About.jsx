@@ -1,6 +1,7 @@
 import { Navbar } from '../components/Navbar';
 import AboutBanner from '../components/About/AboutBanner';
 import { Heritage } from '../components/About/Heritage';
+import { Footer } from '../components/Footer';
 
 import { useScroll, useSpring, motion } from 'framer-motion';
 
@@ -37,6 +38,7 @@ const About = () => {
       >
         <AboutBanner />
         <Heritage />
+        <Footer />
       </motion.div>
     </div>
   );

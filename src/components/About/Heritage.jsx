@@ -1,5 +1,4 @@
 import { Fade } from 'react-awesome-reveal';
-import { Footer } from '../Footer';
 import { AboutList } from './AboutList';
 
 export const Heritage = () => {
@@ -34,7 +33,6 @@ export const Heritage = () => {
           </div>
         </div>
         <AboutList />
-        <Footer />
       </div>
     </>
   );

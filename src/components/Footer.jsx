@@ -6,7 +6,7 @@ export const Footer = () => {
   const Date = useDate();
 
   return (
-    <div className="footer">
+    <div className="footer container">
       <div className="footer-section">
         <div className="footer-links">
           <div>
