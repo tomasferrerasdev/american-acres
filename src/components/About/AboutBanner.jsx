@@ -23,11 +23,11 @@ const letterAnimation = {
   },
 };
 
-const Banner = () => {
+const Banner = ({ title1, title2, rowMessage }) => {
   return (
     <motion.div className="banner about-banner" variants={banner}>
-      <BannerRowTop title={"Let's get"} />
-      <BannerRowBottom title={'familiar'} />
+      <BannerRowTop title={title1} />
+      <BannerRowBottom title={title2} />
     </motion.div>
   );
 };
@@ -51,7 +51,7 @@ const AnimatedLetters = ({ title, disabled }) => (
   </motion.span>
 );
 
-const BannerRowTop = ({ title }) => {
+const BannerRowTop = ({ title, rowMessage }) => {
   return (
     <div className={'banner-row max-width about-row'}>
       <div className="row-col about-col">
@@ -67,10 +67,7 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4,
         }}
       >
-        <span className="row-message">
-          Our thoughts are with those affected. If you need assistance with a
-          claim, please contact your agent or one of our claims professionals.
-        </span>
+        <span className="row-message">{rowMessage ? { rowMessage } : ' '}</span>
       </motion.div>
     </div>
   );

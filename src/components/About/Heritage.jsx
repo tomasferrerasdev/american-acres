@@ -27,7 +27,7 @@ export const Heritage = () => {
           <div className="title-row">
             <Fade direction="up" triggerOnce>
               <div>
-                <h1>About these</h1>
+                <h1>about these</h1>
               </div>
             </Fade>
           </div>

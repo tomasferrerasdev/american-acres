@@ -8,7 +8,6 @@
 
 @import 'components/Home/banner';
 @import 'components/Home/marquee';
-@import 'components/Home/form';
 @import 'components/Home/people';
 @import 'components/Home/news';
 
@@ -17,6 +16,8 @@
 @import 'components/About/heritage';
 @import 'components/About/aboutList';
 @import 'components/About/marquee';
+
+@import 'components/Subroutes/Subroute.scss';
 
 @import 'base/global';
 @import 'base/reset';

@@ -1,4 +1,5 @@
 import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
 
 const careList = [
   {
@@ -32,7 +33,7 @@ export const AboutList = () => {
             <div className="item-container">
               <p>{i}</p>
               <p>{title}</p>
-              <a href="/">{link}</a>
+              <Link to={'special-property'}>{link}</Link>
             </div>
           </Fade>
         ))}

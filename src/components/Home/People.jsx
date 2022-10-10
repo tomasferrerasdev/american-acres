@@ -14,7 +14,7 @@ export const People = () => {
           </div>
         </div>
       </Fade>
-      <Fade>
+      <Fade cascade damping={1}>
         <div className="home-screen__bottom">
           <div className="img">
             <img

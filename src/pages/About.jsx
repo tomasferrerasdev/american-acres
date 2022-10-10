@@ -36,7 +36,11 @@ const About = () => {
           delay: 0.6,
         }}
       >
-        <AboutBanner />
+        <AboutBanner
+          title1={"Let's get"}
+          title2={'familiar'}
+          rowMessage={'punipuni'}
+        />
         <Heritage />
         <Footer />
       </motion.div>

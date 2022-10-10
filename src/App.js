@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Location from './pages/Location';
 import NotFound from './pages/404';
+import SpecialProperty from './pages/SpecialProperty';
 
 import './sass/main.scss';
 
@@ -11,10 +12,13 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/location" element={<Location />} />
-          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="location" element={<Location />} />
+          <Route path="about">
+            <Route index={true} element={<About />} />
+            <Route path="special" element={<SpecialProperty />} />
+          </Route>
         </Routes>
       </Router>
     </>
