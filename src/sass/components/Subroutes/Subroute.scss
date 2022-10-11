@@ -59,6 +59,59 @@
       }
     }
 
+    .care-cards {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      gap: 2rem;
+      flex-direction: row;
+      .care-card {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .card-img {
+          flex: 2;
+          width: 100%;
+          background-image: url('../../../../public/images/house.jpg');
+          background-position: center;
+          background-size: cover;
+        }
+
+        .card-data {
+          flex: 1;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .effect-three > a {
+            font-size: 20px;
+            font-weight: 700;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              width: 0;
+              bottom: 0;
+              height: 2px;
+              margin: -5px 0;
+              left: 0;
+              background-color: $black;
+              transition: all 0.4s ease-in 0s;
+            }
+            &:hover:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
     .back-link {
       width: 100%;
       display: flex;

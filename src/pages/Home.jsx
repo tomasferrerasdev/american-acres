@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react';
 
 import Loader from '../components/Loader';
 import Banner from '../components/Home/Banner';
-import { Navbar } from '../components/Navbar';
-import { People } from '../components/Home/People';
-import { News } from '../components/Home/News';
-import { Footer } from '../components/Footer';
+import { Navbar } from '../components/shared/Navbar';
+import { Footer } from '../components/shared/Footer';
 
 import { useScroll, useSpring, motion, AnimatePresence } from 'framer-motion';
 
@@ -59,8 +57,6 @@ const Home = () => {
                 />
               </div>
             )}
-            <People />
-            <News />
             <Footer />
           </>
         )}

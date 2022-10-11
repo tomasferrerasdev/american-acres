@@ -1,24 +1,28 @@
+// Reset & globals
+@import 'base/global';
+@import 'base/reset';
+@import 'base/typography';
 @import 'abstracts/variables';
 
+// UI Basics
 @import 'components/loader';
-@import 'components/location';
-@import 'components/404';
 @import 'components/navbar';
 @import 'components/footer';
+@import 'components/ui/link';
 
+// Pages
+@import 'components/404';
+@import 'components/location';
+@import 'components/contact';
+
+// Home
 @import 'components/Home/banner';
 @import 'components/Home/marquee';
-@import 'components/Home/people';
-@import 'components/Home/news';
 
+// About
 @import 'components/About/about';
 @import 'components/About/aboutBanner';
 @import 'components/About/heritage';
 @import 'components/About/aboutList';
-@import 'components/About/marquee';
 
-@import 'components/Subroutes/Subroute.scss';
-
-@import 'base/global';
-@import 'base/reset';
-@import 'base/typography';
+@import 'components/Subroutes/Subroute';

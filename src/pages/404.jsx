@@ -1,4 +1,4 @@
-import { Navbar } from '../components/Navbar';
+import { Navbar } from '../components/shared/Navbar';
 import { Fade } from 'react-awesome-reveal';
 
 const NotFound = () => {

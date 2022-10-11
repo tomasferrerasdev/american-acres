@@ -1,3 +1,20 @@
+import { Link } from './Link';
+
+const navLinks = [
+  {
+    text: 'about',
+    href: 'about',
+  },
+  {
+    text: 'cases',
+    href: 'cases',
+  },
+  {
+    text: 'why work with us?',
+    href: 'why-us',
+  },
+];
+
 export const Navbar = () => {
   return (
     <div className="header__container">
@@ -15,15 +32,11 @@ export const Navbar = () => {
 
             <nav className="nav">
               <ul>
-                <li>
-                  <a href="/about">ABOUT</a>
-                </li>
-                <li>
-                  <a href="/cases">CASES</a>
-                </li>
-                <li>
-                  <a href="/why">WHY WORK WITH US?</a>
-                </li>
+                {navLinks.map((link, index) => (
+                  <li key={index}>
+                    <Link href={link.href} text={link.text} uppercase />
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -34,12 +47,10 @@ export const Navbar = () => {
                 src={process.env.PUBLIC_URL + `/images/location.svg`}
                 alt="decorative svg"
               />
-              <a href="/location">Find a location</a>
+              <Link href={`/location`} text={`Find a location`} />
             </div>
 
-            <a href="/" className="work">
-              Let’s work together
-            </a>
+            <Link href={`/`} text={`Let's work together`} />
           </div>
         </div>
       </div>

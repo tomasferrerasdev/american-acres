@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDate } from '../hooks/useDate';
+import { useDate } from '../../hooks/useDate';
 import { Fade } from 'react-awesome-reveal';
 
 export const Footer = () => {

@@ -1,26 +1,21 @@
 import { Fade } from 'react-awesome-reveal';
-import { Link } from 'react-router-dom';
+import { Link } from '../shared/Link';
 
 const careList = [
   {
     i: '/01',
-    title: 'Specialty Property & Casualty Insurance',
-    link: 'I want an example',
+    title: 'Equine Insurance',
+    url: '/about/equine',
   },
   {
     i: '/02',
-    title: 'Nonprofits & Social services',
-    link: 'I want an example',
+    title: 'Housing Insurance',
+    url: '/about/housing',
   },
   {
     i: '/03',
-    title: 'Hurricane Cleanup and Recovery',
-    link: 'I want an example',
-  },
-  {
-    i: '/04',
-    title: 'Concussion Prevention: Creating a safe sport culture',
-    link: 'I want an example',
+    title: 'Transportation Insurance',
+    url: '/about/transportation',
   },
 ];
 
@@ -28,12 +23,12 @@ export const AboutList = () => {
   return (
     <>
       <div className="about-list section">
-        {careList.map(({ title, i, link }, index) => (
+        {careList.map(({ title, i, url }, index) => (
           <Fade direction="up" triggerOnce key={index}>
             <div className="item-container">
               <p>{i}</p>
               <p>{title}</p>
-              <Link to={'special-property'}>{link}</Link>
+              <Link href={url} text={`I want an example`} />
             </div>
           </Fade>
         ))}

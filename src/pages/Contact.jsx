@@ -1,12 +1,9 @@
+import { motion, useScroll, useSpring } from 'framer-motion';
 import { Navbar } from '../components/shared/Navbar';
 import { Footer } from '../components/shared/Footer';
-import AboutBanner from '../components/About/AboutBanner';
-import { Heritage } from '../components/About/Heritage';
-import { AboutList } from '../components/About/AboutList';
+import { Fade } from 'react-awesome-reveal';
 
-import { useScroll, useSpring, motion } from 'framer-motion';
-
-const About = () => {
+const Contact = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -37,13 +34,24 @@ const About = () => {
           delay: 0.6,
         }}
       >
-        <AboutBanner title1={"Let's get"} title2={'familiar'} />
-        <Heritage />
-        <AboutList />
+        <div className="contact-section container">
+          <Fade cascade damping={0.1} direction="up" triggerOnce>
+            <div className="contact-row">
+              <h1>Understanding</h1>
+            </div>
+            <div className="contact-row-bottom">
+              <Fade cascade direction="up" damping={0.3} triggerOnce>
+                <h1>every</h1>
+                <img className="contact-img" src="/images/talking.jpg" alt="" />
+                <h1>voice</h1>
+              </Fade>
+            </div>
+          </Fade>
+        </div>
         <Footer />
       </motion.div>
     </div>
   );
 };
 
-export default About;
+export default Contact;

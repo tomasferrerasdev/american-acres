@@ -1,12 +1,8 @@
-import { Navbar } from '../components/shared/Navbar';
-import { Footer } from '../components/shared/Footer';
-import AboutBanner from '../components/About/AboutBanner';
-import { Heritage } from '../components/About/Heritage';
-import { AboutList } from '../components/About/AboutList';
-
 import { useScroll, useSpring, motion } from 'framer-motion';
+import { Navbar } from './Navbar';
+import AboutBanner from '../About/AboutBanner';
 
-const About = () => {
+export const SubBanner = ({ pageData }) => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -14,7 +10,7 @@ const About = () => {
     restDelta: 0.001,
   });
   return (
-    <div className="about__section">
+    <>
       <motion.div className="progress-bar" style={{ scaleX }} />
       <motion.div
         initial={{ opacity: 0, y: -180 }}
@@ -37,13 +33,13 @@ const About = () => {
           delay: 0.6,
         }}
       >
-        <AboutBanner title1={"Let's get"} title2={'familiar'} />
-        <Heritage />
-        <AboutList />
-        <Footer />
+        <AboutBanner title1={pageData.title} title2={pageData.title2} />
+        <div className="special container">
+          <div className="banner-image">
+            <img src={pageData.image} alt="man pointing" />
+          </div>
+        </div>
       </motion.div>
-    </div>
+    </>
   );
 };
-
-export default About;
