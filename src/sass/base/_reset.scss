@@ -124,10 +124,14 @@ button {
 .container {
   max-width: $layout-breakpoint-medium;
   margin: 0 auto;
+  position: relative;
 }
 
 .section {
-  padding: 7rem 0;
+  max-height: 1000px;
+  height: 100%;
+  padding: 5rem 0;
+
   @media (max-width: $layout-breakpoint-xsmall) {
     padding: 3.5rem 0;
   }

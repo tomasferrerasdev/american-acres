@@ -1,9 +1,10 @@
 import { Fade } from 'react-awesome-reveal';
+
 import { SubBanner } from '../../components/shared/SubBanner';
 import { GoBack } from '../../components/shared/GoBack';
 
 const pageData = {
-  title: 'Transportation',
+  title: 'Transport',
   title2: 'Insurance',
   image:
     'https://ik.imagekit.io/txdk54zsu/about/truck-1?ik-sdk-version=javascript-1.4.3&updatedAt=1665500334787',

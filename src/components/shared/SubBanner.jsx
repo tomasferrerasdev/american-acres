@@ -1,4 +1,5 @@
 import { useScroll, useSpring, motion } from 'framer-motion';
+
 import { Navbar } from './Navbar';
 import AboutBanner from '../About/AboutBanner';
 

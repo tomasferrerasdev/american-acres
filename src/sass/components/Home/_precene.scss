@@ -1,0 +1,26 @@
+.precene {
+  width: 100%;
+  height: calc(80vh);
+  max-height: 1000px;
+  position: relative;
+
+  div {
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.marquee-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.marquee-letter {
+  font-size: clamp(7rem, 1rem + 12vw, 19rem);
+}

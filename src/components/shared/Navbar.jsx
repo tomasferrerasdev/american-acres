@@ -1,19 +1,6 @@
 import { Link } from './Link';
 
-const navLinks = [
-  {
-    text: 'about',
-    href: 'about',
-  },
-  {
-    text: 'cases',
-    href: 'cases',
-  },
-  {
-    text: 'why work with us?',
-    href: 'why-us',
-  },
-];
+const navLinks = [];
 
 export const Navbar = () => {
   return (
@@ -24,10 +11,12 @@ export const Navbar = () => {
             <div className="logo">
               <a href="/">
                 <img
-                  src={process.env.PUBLIC_URL + `/images/logo.svg`}
+                  src={process.env.PUBLIC_URL + `/images/eagle.png`}
                   alt="american acres logo"
                 />
               </a>
+              <p>American Acres</p>
+              <p>Insurance</p>
             </div>
 
             <nav className="nav">
@@ -50,7 +39,7 @@ export const Navbar = () => {
               <Link href={`/location`} text={`Find a location`} />
             </div>
 
-            <Link href={`/`} text={`Let's work together`} />
+            <Link href={`/contact`} text={`Let's work together`} />
           </div>
         </div>
       </div>

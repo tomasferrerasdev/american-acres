@@ -1,0 +1,24 @@
+.people-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .people-header-container {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 1rem 0;
+
+    h3 span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.people-images-container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

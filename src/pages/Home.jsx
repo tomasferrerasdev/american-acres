@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
+import { useScroll, useSpring, motion, AnimatePresence } from 'framer-motion';
 
 import Loader from '../components/Loader';
 import Banner from '../components/Home/Banner';
 import { Navbar } from '../components/shared/Navbar';
 import { Footer } from '../components/shared/Footer';
 
-import { useScroll, useSpring, motion, AnimatePresence } from 'framer-motion';
+import { Care } from '../components/Home/Care';
+import { CareList } from '../components/Home/CareList';
+
+import { Precene } from '../components/Home/Precene';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -57,6 +61,11 @@ const Home = () => {
                 />
               </div>
             )}
+            <div className="container">
+              <Care />
+              <CareList />
+              <Precene />
+            </div>
             <Footer />
           </>
         )}

@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
+
 import { Fade } from 'react-awesome-reveal';
+
 import { SubBanner } from '../../components/shared/SubBanner';
 import { GoBack } from '../../components/shared/GoBack';
 
@@ -10,6 +13,10 @@ const pageData = {
 };
 
 const Equine = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <SubBanner pageData={pageData} />
